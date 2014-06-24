@@ -42,6 +42,15 @@ set listchars=tab:→\ ,trail:·
 set cursorline
 set cursorcolumn
 
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class cc=80 ts=4 sw=4
 autocmd BufRead *.js set ts=4 sw=4
 autocmd BufRead *.css set ts=2 sw=2
@@ -53,4 +62,4 @@ autocmd BufRead,BufNewFile *.html set ts=2 sw=2
 let g:bufExplorerShowRelativePath=1  " Show relative paths.
 let g:bufExplorerDisableDefaultKeyMapping=1
 noremap <leader>e :BufExplorer<CR>
-let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_working_path_mode = 0
