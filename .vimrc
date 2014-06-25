@@ -54,7 +54,7 @@ nnoremap <C-l> <C-w>l
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class cc=80 ts=4 sw=4
 autocmd BufRead *.js set ts=4 sw=4
 autocmd BufRead *.css set ts=2 sw=2
-autocmd BufWritePre *.py,*.js :%s/\s\+$//g
+autocmd BufWritePre *.py,*.js :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.scss set filetype=scss
 autocmd BufRead,BufNewFile *.textile set filetype=textile
 autocmd BufRead,BufNewFile *.html set ts=2 sw=2
