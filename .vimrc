@@ -62,4 +62,4 @@ autocmd BufRead,BufNewFile *.html set ts=2 sw=2
 let g:bufExplorerShowRelativePath=1  " Show relative paths.
 let g:bufExplorerDisableDefaultKeyMapping=1
 noremap <leader>e :BufExplorer<CR>
-let g:ctrlp_working_path_mode = 0
+let g:ctrlp_working_path_mode=0
