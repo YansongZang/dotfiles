@@ -62,4 +62,7 @@ autocmd BufRead,BufNewFile *.html set ts=2 sw=2
 let g:bufExplorerShowRelativePath=1  " Show relative paths.
 let g:bufExplorerDisableDefaultKeyMapping=1
 noremap <leader>e :BufExplorer<CR>
+" ctrl-p
 let g:ctrlp_working_path_mode=0
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|svn)$'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files', 'find %s -type f']
