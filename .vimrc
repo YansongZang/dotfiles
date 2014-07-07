@@ -65,4 +65,10 @@ noremap <leader>e :BufExplorer<CR>
 " ctrl-p
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|svn)$'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files', 'find %s -type f']
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files'],
+    \ 2: ['.svn', 'cd %s && svn list -R'],
+    \ },
+  \ 'fallback': 'find %s -type f'
+  \ }
