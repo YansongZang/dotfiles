@@ -51,10 +51,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-autocmd BufRead *.py,*.java set cc=80 ts=4 sw=4
+autocmd BufRead *.py,*.java,*.cpp,*.c,*.h set cc=80 ts=4 sw=4
 autocmd BufRead *.js set ts=4 sw=4
 autocmd BufRead *.css set ts=2 sw=2
-autocmd BufWritePre *.py,*.js,*.java,*.html :%s/\s\+$//e
+autocmd BufWritePre *.py,*.js,*.java,*.html,*.cpp,*.c,*.h :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.scss set filetype=scss
 autocmd BufRead,BufNewFile *.textile set filetype=textile
 autocmd BufRead,BufNewFile *.html set ts=2 sw=2 filetype=htmldjango
