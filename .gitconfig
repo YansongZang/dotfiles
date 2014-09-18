@@ -1,0 +1,9 @@
+[user]
+	email = albertzang.ys@gmail.com
+	name = Albert Zang
+[core]
+	editor = vim
+[color]
+	ui = auto
+[push]
+	default = simple
