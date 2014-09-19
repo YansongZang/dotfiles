@@ -58,6 +58,7 @@ autocmd BufWritePre *.py,*.js,*.java,*.html,*.cpp,*.c,*.h :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.scss set filetype=scss
 autocmd BufRead,BufNewFile *.textile set filetype=textile
 autocmd BufRead,BufNewFile *.html set ts=2 sw=2 filetype=htmldjango
+autocmd BufRead,BufNewFile *.tex set ts=2 sw=2
 " bufexplorer
 let g:bufExplorerShowRelativePath=1  " Show relative paths.
 let g:bufExplorerDisableDefaultKeyMapping=1
