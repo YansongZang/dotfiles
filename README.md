@@ -7,3 +7,4 @@
 * html5.vim
 * jellybeans.vim
 * syntastic
+* vim-web-indent
