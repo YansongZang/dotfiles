@@ -73,3 +73,6 @@ let g:ctrlp_user_command = {
     \ },
   \ 'fallback': 'find %s -type f'
   \ }
+" syntastic
+let g:syntastic_python_checkers=['flake8', 'pep8', 'pyflakes', 'python']
+let g:syntastic_javascript_checkers=['gjslint']
