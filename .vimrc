@@ -52,7 +52,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 autocmd BufRead *.py,*.java,*.cpp,*.c,*.h set cc=80 ts=4 sw=4
-autocmd BufRead *.js set ts=4 sw=4
+autocmd BufRead *.js set ts=2 sw=2
 autocmd BufRead *.css set ts=2 sw=2
 autocmd BufWritePre *.py,*.js,*.java,*.html,*.cpp,*.c,*.h :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.scss set filetype=scss
