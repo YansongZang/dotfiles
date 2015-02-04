@@ -8,3 +8,4 @@
 * jellybeans.vim
 * syntastic
 * vim-web-indent
+* vim-less
