@@ -79,3 +79,6 @@ let g:ctrlp_user_command = {
 " syntastic
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_javascript_checkers=['jslint']
+" nerdtree
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
