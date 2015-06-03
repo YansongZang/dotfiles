@@ -82,3 +82,4 @@ let g:syntastic_javascript_checkers=['jslint']
 " nerdtree
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+map <C-n> :NERDTreeToggle<CR>
