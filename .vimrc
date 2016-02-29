@@ -56,6 +56,7 @@ autocmd BufRead,BufNewFile *.py,*.java,*.cpp,*.c,*.h set cc=80 ts=4 sw=4
 autocmd BufRead,BufNewFile *.tex,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
 autocmd BufRead,BufNewFile *.scss set filetype=scss
 autocmd BufRead,BufNewFile *.less set filetype=less
+autocmd BufRead,BufNewFile *.sc set filetype=scala
 " autocmd BufRead,BufNewFile *.html set filetype=htmldjango
 autocmd BufRead,BufNewFile *.html set syntax=html.tornadotmpl
 " bufexplorer
@@ -76,7 +77,7 @@ let g:ctrlp_user_command = {
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_javascript_checkers=['jsxhint']
 let g:syntastic_java_checkers = ['javac']
-let g:syntastic_java_javac_classpath = '~/hadoop-2.7.1/share/hadoop/**/*.jar'
+
 " nerdtree
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
