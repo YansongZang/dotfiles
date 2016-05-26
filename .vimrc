@@ -53,7 +53,7 @@ nnoremap <C-l> <C-w>l
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.py,*.java,*.cpp,*.c,*.h set cc=80 ts=4 sw=4
-autocmd BufRead,BufNewFile *.tex,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
+autocmd BufRead,BufNewFile *.tex,*.xml,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
 autocmd BufRead,BufNewFile *.scss set filetype=scss
 autocmd BufRead,BufNewFile *.less set filetype=less
 autocmd BufRead,BufNewFile *.sc set filetype=scala
@@ -75,7 +75,7 @@ let g:ctrlp_user_command = {
   \ }
 " syntastic
 let g:syntastic_python_checkers=['flake8']
-let g:syntastic_javascript_checkers=['jsxhint']
+let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_java_checkers = ['javac']
 
 " nerdtree
