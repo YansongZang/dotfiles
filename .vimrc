@@ -53,7 +53,7 @@ nnoremap <C-l> <C-w>l
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.py,*.java,*.cpp,*.c,*.h set cc=80 ts=4 sw=4
-autocmd BufRead,BufNewFile *.tex,*.xml,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
+autocmd BufRead,BufNewFile *.tex,*.xml,*.json,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
 autocmd BufRead,BufNewFile *.scss set filetype=scss
 autocmd BufRead,BufNewFile *.less set filetype=less
 autocmd BufRead,BufNewFile *.sc set filetype=scala
