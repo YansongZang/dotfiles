@@ -1,13 +1,13 @@
+" Manual Page for Options
+" http://vimdoc.sourceforge.net/htmldoc/options.html
 call pathogen#infect()
 call pathogen#helptags()
-"   Manual Page for Options
-"   http://vimdoc.sourceforge.net/htmldoc/options.html
 set nocompatible
 filetype plugin indent on
 syntax on
 set background=dark
 colorscheme jellybeans
-set grepprg=ack-grep
+set grepprg=ack
 set grepformat=%f:%l:%m
 let &termencoding=&encoding
 set encoding=utf-8
@@ -77,7 +77,6 @@ let g:ctrlp_user_command = {
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_java_checkers = ['javac']
-
 " nerdtree
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
