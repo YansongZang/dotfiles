@@ -1,7 +1,8 @@
 " Manual Page for Options
 " http://vimdoc.sourceforge.net/htmldoc/options.html
-call pathogen#infect()
-call pathogen#helptags()
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+execute pathogen#helptags()
 set nocompatible
 filetype plugin indent on
 syntax on
@@ -53,12 +54,7 @@ nnoremap <C-l> <C-w>l
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.py,*.java,*.cpp,*.c,*.h set cc=80 ts=4 sw=4
-autocmd BufRead,BufNewFile *.tex,*.xml,*.json,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
-autocmd BufRead,BufNewFile *.scss set filetype=scss
-autocmd BufRead,BufNewFile *.less set filetype=less
-autocmd BufRead,BufNewFile *.sc set filetype=scala
-" autocmd BufRead,BufNewFile *.html set filetype=htmldjango
-autocmd BufRead,BufNewFile *.html set syntax=html.tornadotmpl
+autocmd BufRead,BufNewFile *.tex,*.xml,*.json,*.conf,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
 " bufexplorer
 let g:bufExplorerShowRelativePath=1  " Show relative paths.
 let g:bufExplorerDisableDefaultKeyMapping=1
