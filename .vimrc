@@ -54,7 +54,7 @@ nnoremap <C-l> <C-w>l
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.py,*.java,*.cpp,*.c,*.h set cc=80 ts=4 sw=4
-autocmd BufRead,BufNewFile *.tex,*.xml,*.json,*.yml,*.conf,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
+autocmd BufRead,BufNewFile *.tex,*.xml,*.json,*.yaml,*.conf,*.html,*.js,*.jsx,*.css,*.scss,*.less set ts=2 sw=2
 " bufexplorer
 let g:bufExplorerShowRelativePath=1  " Show relative paths.
 let g:bufExplorerDisableDefaultKeyMapping=1
